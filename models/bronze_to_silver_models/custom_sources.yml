@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: salesforce
+    schema: MARIO_SALESFORCE_LEADS
+    tables:
+      - name: lead
+      - name: opportunityHistory
+      - name: account
+      - name: user
+      - name: fivetran_formula_model
+  - name: SHOPIFY
+    database: SNOWFLAKE_DEMO_01
+    schema: SHOPIFY
+    tables:
+      - name: ORDER
+        identifier: '"ORDER"'
+      - name: CUSTOMER
+  - name: mario_google_analytics_4
+    tables:
+      - name: custom_metrics
+

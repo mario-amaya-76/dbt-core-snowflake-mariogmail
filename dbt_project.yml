@@ -35,6 +35,11 @@ models:
     example:
       +materialized: view
 
+    bronze_to_silver_models:
+      +schema: silver_schema
+    silver_to_gold_models:
+      +schema: gold_schema
+
 vars:
     netsuite_data_model: netsuite2
     netsuite_database: MARIO_AMAYA
