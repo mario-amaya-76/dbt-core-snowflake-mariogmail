@@ -2,10 +2,11 @@ version: 2
 
 sources:
   - name: media_entertainment
-    database: MARIO_AMAYA
-    schema: mario_sql_server_2026_media_entertainment
+    database: FIVETRAN_DATABASE
+    schema: fivetran_sql_stored_procedure_basic_pov
     tables:
       - name: disney_plus_titles
+        identifier: table_disney_plus_titles_stored_proc
         description: Raw Disney+ titles synced via Fivetran from SQL Server.
         columns:
           - name: id
@@ -40,6 +41,7 @@ sources:
             description: Timestamp of the last Fivetran sync.
 
       - name: netflix_titles
+        identifier: table_netflix_titles_stored_proc
         description: Raw Netflix titles synced via Fivetran from SQL Server.
         columns:
           - name: id
