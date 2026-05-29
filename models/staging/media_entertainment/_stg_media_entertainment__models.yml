@@ -15,7 +15,8 @@ models:
         description: Movie or TV Show.
         tests:
           - accepted_values:
-              values: ['Movie', 'TV Show']
+              arguments:
+                values: ['Movie', 'TV Show']
       - name: title
         tests:
           - not_null
@@ -38,7 +39,8 @@ models:
         description: Movie or TV Show.
         tests:
           - accepted_values:
-              values: ['Movie', 'TV Show']
+              arguments:
+                values: ['Movie', 'TV Show']
       - name: title
         tests:
           - not_null
