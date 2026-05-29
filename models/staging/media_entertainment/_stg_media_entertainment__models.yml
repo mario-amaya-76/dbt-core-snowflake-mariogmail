@@ -1,0 +1,48 @@
+version: 2
+
+models:
+  - name: stg_media_entertainment__disney_plus_titles
+    description: Staged Disney+ titles — cleaned, renamed, and filtered for active records.
+    columns:
+      - name: disney_id
+        description: Source surrogate key for the Disney+ title.
+        tests:
+          - not_null
+          - unique
+      - name: show_id
+        description: Original show identifier from the source dataset.
+      - name: content_type
+        description: Movie or TV Show.
+        tests:
+          - accepted_values:
+              values: ['Movie', 'TV Show']
+      - name: title
+        tests:
+          - not_null
+      - name: platform
+        description: Always 'Disney+' for records in this model.
+        tests:
+          - not_null
+
+  - name: stg_media_entertainment__netflix_titles
+    description: Staged Netflix titles — cleaned, renamed, and filtered for active records.
+    columns:
+      - name: netflix_id
+        description: Source surrogate key for the Netflix title.
+        tests:
+          - not_null
+          - unique
+      - name: show_id
+        description: Original show identifier from the source dataset.
+      - name: content_type
+        description: Movie or TV Show.
+        tests:
+          - accepted_values:
+              values: ['Movie', 'TV Show']
+      - name: title
+        tests:
+          - not_null
+      - name: platform
+        description: Always 'Netflix' for records in this model.
+        tests:
+          - not_null

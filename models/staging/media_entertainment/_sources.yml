@@ -1,0 +1,74 @@
+version: 2
+
+sources:
+  - name: media_entertainment
+    database: MARIO_AMAYA
+    schema: mario_sql_server_2026_media_entertainment
+    tables:
+      - name: disney_plus_titles
+        description: Raw Disney+ titles synced via Fivetran from SQL Server.
+        columns:
+          - name: id
+            description: Surrogate key assigned by the source system.
+          - name: show_id
+            description: Original show identifier from the source dataset.
+          - name: type
+            description: Content type — Movie or TV Show.
+          - name: title
+            description: Title of the content.
+          - name: director
+            description: Director(s) of the title.
+          - name: actors
+            description: Cast members.
+          - name: country
+            description: Country of production.
+          - name: date_added
+            description: Date the title was added to the platform.
+          - name: release_year
+            description: Year the title was originally released.
+          - name: rating
+            description: Content rating (e.g. PG, TV-MA).
+          - name: duration
+            description: Runtime in minutes or number of seasons.
+          - name: listed_in
+            description: Genre categories.
+          - name: description
+            description: Short synopsis.
+          - name: _fivetran_deleted
+            description: Fivetran soft-delete flag.
+          - name: _fivetran_synced
+            description: Timestamp of the last Fivetran sync.
+
+      - name: netflix_titles
+        description: Raw Netflix titles synced via Fivetran from SQL Server.
+        columns:
+          - name: id
+            description: Surrogate key assigned by the source system.
+          - name: show_id
+            description: Original show identifier from the source dataset.
+          - name: type
+            description: Content type — Movie or TV Show.
+          - name: title
+            description: Title of the content.
+          - name: director
+            description: Director(s) of the title.
+          - name: actors
+            description: Cast members.
+          - name: country
+            description: Country of production.
+          - name: date_added
+            description: Date the title was added to the platform.
+          - name: release_year
+            description: Year the title was originally released.
+          - name: rating
+            description: Content rating (e.g. PG, TV-MA).
+          - name: duration
+            description: Runtime in minutes or number of seasons.
+          - name: listed_in
+            description: Genre categories.
+          - name: description
+            description: Short synopsis.
+          - name: _fivetran_deleted
+            description: Fivetran soft-delete flag.
+          - name: _fivetran_synced
+            description: Timestamp of the last Fivetran sync.

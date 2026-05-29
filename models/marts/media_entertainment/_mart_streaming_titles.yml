@@ -1,0 +1,54 @@
+version: 2
+
+models:
+  - name: mart_streaming_titles
+    description: >
+      Unified catalog of streaming titles across Disney+ and Netflix.
+      Each row is one title on one platform. Materialized as a table for
+      downstream BI and analytics consumption.
+    columns:
+      - name: streaming_title_id
+        description: Surrogate key derived from platform + show_id.
+        tests:
+          - not_null
+          - unique
+      - name: platform
+        description: Streaming platform — 'Disney+' or 'Netflix'.
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Disney+', 'Netflix']
+      - name: show_id
+        description: Original show identifier from the source platform dataset.
+        tests:
+          - not_null
+      - name: content_type
+        description: Movie or TV Show.
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Movie', 'TV Show']
+      - name: title
+        description: Title of the content.
+        tests:
+          - not_null
+      - name: director
+        description: Director(s). Null when not provided by the source.
+      - name: cast_members
+        description: Principal cast. Null when not provided by the source.
+      - name: country
+        description: Country of production. Null when not provided by the source.
+      - name: date_added
+        description: Date the title was added to the platform.
+      - name: release_year
+        description: Year the title was originally released.
+      - name: rating
+        description: Content rating (e.g. PG, TV-MA). Null when not provided.
+      - name: duration
+        description: Runtime in minutes for movies, seasons for TV Shows.
+      - name: genres
+        description: Comma-separated genre categories.
+      - name: description
+        description: Short synopsis of the title.
+      - name: _fivetran_synced
+        description: Timestamp of the last Fivetran sync for this record.
