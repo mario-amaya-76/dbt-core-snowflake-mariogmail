@@ -1,0 +1,92 @@
+version: 2
+
+models:
+  - name: mart_erp_bipac__bipac
+    description: >
+      Consolidated BIPAC table combining records from the BIDBFA050, BIDBFE902,
+      and BIDBFW753 schemas into a single unified table.
+    columns:
+      - name: bipac_id
+        description: Surrogate key derived from source_schema + _fivetran_id.
+        tests:
+          - not_null
+          - unique
+      - name: source_schema
+        description: The originating schema for this row — one of BIDBFA050, BIDBFE902, BIDBFW753.
+        tests:
+          - not_null
+
+  - name: mart_erp_bipac__bipacc
+    description: >
+      Consolidated BIPACC table combining records from the BIDBFA050, BIDBFE902,
+      and BIDBFW753 schemas into a single unified table.
+    columns:
+      - name: bipacc_id
+        description: Surrogate key derived from source_schema + _fivetran_id.
+        tests:
+          - not_null
+          - unique
+      - name: source_schema
+        description: The originating schema for this row — one of BIDBFA050, BIDBFE902, BIDBFW753.
+        tests:
+          - not_null
+
+  - name: mart_erp_bipac__bipacl
+    description: >
+      Consolidated BIPACL table combining records from the BIDBFA050, BIDBFE902,
+      and BIDBFW753 schemas into a single unified table.
+    columns:
+      - name: bipacl_id
+        description: Surrogate key derived from source_schema + _fivetran_id.
+        tests:
+          - not_null
+          - unique
+      - name: source_schema
+        description: The originating schema for this row — one of BIDBFA050, BIDBFE902, BIDBFW753.
+        tests:
+          - not_null
+
+  - name: mart_erp_bipac__bipadh
+    description: >
+      Consolidated BIPADH table combining records from the BIDBFA050, BIDBFE902,
+      and BIDBFW753 schemas into a single unified table.
+    columns:
+      - name: bipadh_id
+        description: Surrogate key derived from source_schema + _fivetran_id.
+        tests:
+          - not_null
+          - unique
+      - name: source_schema
+        description: The originating schema for this row — one of BIDBFA050, BIDBFE902, BIDBFW753.
+        tests:
+          - not_null
+
+  - name: mart_erp_bipac__bipas
+    description: >
+      Consolidated BIPAS table combining records from the BIDBFA050, BIDBFE902,
+      and BIDBFW753 schemas into a single unified table.
+    columns:
+      - name: bipas_id
+        description: Surrogate key derived from source_schema + _fivetran_id.
+        tests:
+          - not_null
+          - unique
+      - name: source_schema
+        description: The originating schema for this row — one of BIDBFA050, BIDBFE902, BIDBFW753.
+        tests:
+          - not_null
+
+  - name: mart_erp_bipac__bipat
+    description: >
+      Consolidated BIPAT table combining records from the BIDBFA050, BIDBFE902,
+      and BIDBFW753 schemas into a single unified table.
+    columns:
+      - name: bipat_id
+        description: Surrogate key derived from source_schema + _fivetran_id.
+        tests:
+          - not_null
+          - unique
+      - name: source_schema
+        description: The originating schema for this row — one of BIDBFA050, BIDBFE902, BIDBFW753.
+        tests:
+          - not_null
