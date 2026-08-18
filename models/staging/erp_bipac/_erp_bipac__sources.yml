@@ -1,0 +1,56 @@
+version: 2
+
+sources:
+  - name: erp_bipac_bidbfa050
+    description: BI Publisher ERP replica tables synced via Fivetran from the BIDBFA050 schema/environment.
+    database: MARIO_AMAYA
+    schema: BIDBFA050
+    tables:
+      - name: bipac
+        identifier: BIPAC
+      - name: bipacc
+        identifier: BIPACC
+      - name: bipacl
+        identifier: BIPACL
+      - name: bipadh
+        identifier: BIPADH
+      - name: bipas
+        identifier: BIPAS
+      - name: bipat
+        identifier: BIPAT
+
+  - name: erp_bipac_bidbfe902
+    description: BI Publisher ERP replica tables synced via Fivetran from the BIDBFE902 schema/environment.
+    database: MARIO_AMAYA
+    schema: BIDBFE902
+    tables:
+      - name: bipac
+        identifier: BIPAC
+      - name: bipacc
+        identifier: BIPACC
+      - name: bipacl
+        identifier: BIPACL
+      - name: bipadh
+        identifier: BIPADH
+      - name: bipas
+        identifier: BIPAS
+      - name: bipat
+        identifier: BIPAT
+
+  - name: erp_bipac_bidbfw753
+    description: BI Publisher ERP replica tables synced via Fivetran from the BIDBFW753 schema/environment.
+    database: MARIO_AMAYA
+    schema: BIDBFW753
+    tables:
+      - name: bipac
+        identifier: BIPAC
+      - name: bipacc
+        identifier: BIPACC
+      - name: bipacl
+        identifier: BIPACL
+      - name: bipadh
+        identifier: BIPADH
+      - name: bipas
+        identifier: BIPAS
+      - name: bipat
+        identifier: BIPAT

@@ -1,0 +1,68 @@
+version: 2
+
+models:
+  - name: int_erp_bipac__bipac_unioned
+    description: BIPAC rows unioned across the BIDBFA050, BIDBFE902, and BIDBFW753 schemas.
+    columns:
+      - name: source_schema
+        description: The originating schema for this row — one of BIDBFA050, BIDBFE902, BIDBFW753.
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['BIDBFA050', 'BIDBFE902', 'BIDBFW753']
+
+  - name: int_erp_bipac__bipacc_unioned
+    description: BIPACC rows unioned across the BIDBFA050, BIDBFE902, and BIDBFW753 schemas.
+    columns:
+      - name: source_schema
+        description: The originating schema for this row — one of BIDBFA050, BIDBFE902, BIDBFW753.
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['BIDBFA050', 'BIDBFE902', 'BIDBFW753']
+
+  - name: int_erp_bipac__bipacl_unioned
+    description: BIPACL rows unioned across the BIDBFA050, BIDBFE902, and BIDBFW753 schemas.
+    columns:
+      - name: source_schema
+        description: The originating schema for this row — one of BIDBFA050, BIDBFE902, BIDBFW753.
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['BIDBFA050', 'BIDBFE902', 'BIDBFW753']
+
+  - name: int_erp_bipac__bipadh_unioned
+    description: BIPADH rows unioned across the BIDBFA050, BIDBFE902, and BIDBFW753 schemas.
+    columns:
+      - name: source_schema
+        description: The originating schema for this row — one of BIDBFA050, BIDBFE902, BIDBFW753.
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['BIDBFA050', 'BIDBFE902', 'BIDBFW753']
+
+  - name: int_erp_bipac__bipas_unioned
+    description: BIPAS rows unioned across the BIDBFA050, BIDBFE902, and BIDBFW753 schemas.
+    columns:
+      - name: source_schema
+        description: The originating schema for this row — one of BIDBFA050, BIDBFE902, BIDBFW753.
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['BIDBFA050', 'BIDBFE902', 'BIDBFW753']
+
+  - name: int_erp_bipac__bipat_unioned
+    description: BIPAT rows unioned across the BIDBFA050, BIDBFE902, and BIDBFW753 schemas.
+    columns:
+      - name: source_schema
+        description: The originating schema for this row — one of BIDBFA050, BIDBFE902, BIDBFW753.
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['BIDBFA050', 'BIDBFE902', 'BIDBFW753']

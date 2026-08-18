@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: stg_erp_bipac__bidbfa050__bipac
+    description: Staged BIPAC records from the BIDBFA050 schema, filtered for active rows.
+  - name: stg_erp_bipac__bidbfe902__bipac
+    description: Staged BIPAC records from the BIDBFE902 schema, filtered for active rows.
+  - name: stg_erp_bipac__bidbfw753__bipac
+    description: Staged BIPAC records from the BIDBFW753 schema, filtered for active rows.
+
+  - name: stg_erp_bipac__bidbfa050__bipacc
+    description: Staged BIPACC records from the BIDBFA050 schema, filtered for active rows.
+  - name: stg_erp_bipac__bidbfe902__bipacc
+    description: Staged BIPACC records from the BIDBFE902 schema, filtered for active rows.
+  - name: stg_erp_bipac__bidbfw753__bipacc
+    description: Staged BIPACC records from the BIDBFW753 schema, filtered for active rows.
+
+  - name: stg_erp_bipac__bidbfa050__bipacl
+    description: Staged BIPACL records from the BIDBFA050 schema, filtered for active rows.
+  - name: stg_erp_bipac__bidbfe902__bipacl
+    description: Staged BIPACL records from the BIDBFE902 schema, filtered for active rows.
+  - name: stg_erp_bipac__bidbfw753__bipacl
+    description: Staged BIPACL records from the BIDBFW753 schema, filtered for active rows.
+
+  - name: stg_erp_bipac__bidbfa050__bipadh
+    description: Staged BIPADH records from the BIDBFA050 schema, filtered for active rows.
+  - name: stg_erp_bipac__bidbfe902__bipadh
+    description: Staged BIPADH records from the BIDBFE902 schema, filtered for active rows.
+  - name: stg_erp_bipac__bidbfw753__bipadh
+    description: Staged BIPADH records from the BIDBFW753 schema, filtered for active rows.
+
+  - name: stg_erp_bipac__bidbfa050__bipas
+    description: Staged BIPAS records from the BIDBFA050 schema, filtered for active rows.
+  - name: stg_erp_bipac__bidbfe902__bipas
+    description: Staged BIPAS records from the BIDBFE902 schema, filtered for active rows.
+  - name: stg_erp_bipac__bidbfw753__bipas
+    description: Staged BIPAS records from the BIDBFW753 schema, filtered for active rows.
+
+  - name: stg_erp_bipac__bidbfa050__bipat
+    description: Staged BIPAT records from the BIDBFA050 schema, filtered for active rows.
+  - name: stg_erp_bipac__bidbfe902__bipat
+    description: Staged BIPAT records from the BIDBFE902 schema, filtered for active rows.
+  - name: stg_erp_bipac__bidbfw753__bipat
+    description: Staged BIPAT records from the BIDBFW753 schema, filtered for active rows.
